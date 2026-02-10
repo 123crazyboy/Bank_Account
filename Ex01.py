@@ -77,23 +77,6 @@ class BankAccount:
         self.__balance += amount
 
 
-# def transfer(self, receiver_account, amount, secret):
-#     if secret == self.__secret:
-#         if amount > self.__balance:
-#             print("You don't have enough money")
-#             return False
-#         else:
-#             self.__balance -= amount
-#             receiver_account._add_balance(amount)
-#             print(f"{self.name} transferred Riel{amount} to {receiver_account.name} successfully.")
-#             print(f"{self.name} remain balance is: {self.__balance}")
-#             print(f"{receiver_account.name} balance is: {receiver_account._BankAccount__balance}")
-#             return True
-#     else:
-#         print("You are not allowed.")
-#         return False
-
-
 accounts = {
     "dara": BankAccount("Dara", 20000, 321),
     "visual": BankAccount("Visual", 50000, 987),
